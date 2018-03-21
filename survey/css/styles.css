@@ -1,0 +1,7 @@
+.card {
+  display: none;
+}
+
+div#genre input {
+  color: red;
+}

@@ -1,12 +1,13 @@
 $(document).ready(function() {
-  $("form#appointment").submit(function(event) {
+  $("form#survey").submit(function(event) {
     event.preventDefault();
     var nameField = $("#name").val();
-    console.log(nameField);
-    var dateField = $("#date").val();
-    console.log(dateField);
-    var timeField = $("#time").val();
-    $("#output").text(nameField + " " + dateField + " " + timeField);
-  });
+    var dob = $("#born").val();
+    var genres = $("div#genre input:checked").val();
+    var ages = $("#age").val();
+    var surveyResults = [nameField, dob, genres, ages];
 
+    $(".card").show();
+    $(".card-text").text("Are these your choices? " + surveyResults.join(" "));
+  });
 });

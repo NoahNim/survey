@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Online Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>header</h1>
+      <form id="survey">
+      <div class="form-group">
+        <label for="name">Name (First and Last)</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+
+      <div class="form-group" id="genre">
+        <label for="favMusic">Favorite genre of Music</label><br>
+        <input id="classical" type="radio" name="favMusic" value="Classical">Classical<br>
+        <input id="rock" type="radio" name="favMusic" value="Rock">Rock<br>
+        <input id="metal" type="radio" name="favMusic" value="Metal">Metal<br>
+        <input id="big-band" type="radio" name="favMusic" value="Big Band">Big Band<br>
+        <input id="hip-hop" type="radio" name="favMusic" value="Hip-Hop">Hip Hop<br>
+      </div>
+
+      <div class="form-group">
+        <select class="form-control" id="age">
+          <option>Make A Selection</option>
+          <option>0 to 18</option>
+          <option>18 to 40</option>
+          <option>40 to 65</option>
+          <option>65+</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SURVEY RESULTS</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-secondary" type="submit">Confirm</a>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
