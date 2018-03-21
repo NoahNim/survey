@@ -5,14 +5,15 @@ $(document).ready(function() {
     var dob = $("#born").val();
     var genres = $("div#genre input:checked").val();
     var ages = $("#age").val();
-    var surveyResults = [nameField, dob, genres, ages];
+    var surveyResults = "Your name is: " + nameField + " " + "Date of birth: " + dob + " " + "Your favorite music: " + genres + " " + "Your age: " + ages
 
     $(".card").show();
-    $(".card-text").text("Are these your choices? " + surveyResults.join(" "));
+    $(".card-text").text("Are these your choices? " + surveyResults);
   });
   $("#results").click(function(event) {
     $(".card-text").hide();
     $("#results").hide();
-    $(".card").append("Thank you! Your survey results have been submitted!")
+    $("form").hide();
+    $(".card").append("Thank you! Your survey results have been submitted!");
   });
 });

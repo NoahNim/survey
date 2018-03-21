@@ -5,3 +5,7 @@
 div#genre input {
   color: red;
 }
+
+#subbut {
+  margin-bottom: 10px;
+}
