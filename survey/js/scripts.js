@@ -10,4 +10,9 @@ $(document).ready(function() {
     $(".card").show();
     $(".card-text").text("Are these your choices? " + surveyResults.join(" "));
   });
+  $("#results").click(function(event) {
+    $(".card-text").hide();
+    $("#results").hide();
+    $(".card").append("Thank you! Your survey results have been submitted!")
+  });
 });
